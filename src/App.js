@@ -20,7 +20,7 @@ function App() {
             {/* {user} */}
             Name:{user.first_name}
             Surname:{user.last_name}
-            Avatar: {user.avatar}{" "}
+            Avatar: <img src={user.avatar} height={100} />
             Mail_id:{user.email}
           </li>
 
