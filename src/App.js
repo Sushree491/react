@@ -16,14 +16,16 @@ function App() {
       <h2>Users:</h2>
       <ul>
         {users.map((user) => (
-          <li key={user.id}>
-            {/* {user} */}
-            Name:{user.first_name}
-            Surname:{user.last_name}
-            Avatar: <img src={user.avatar} height={100} />
-            Mail_id:{user.email}
-          </li>
-
+          <div>
+            <li key={user.id}>
+              {/* {user} */}
+              Name:{user.first_name} <br/>
+              Surname:{user.last_name} <br/>
+              Avatar: <img src={user.avatar} height={100} /> <br/>
+              Mail_id:{user.email}
+            </li>
+            <br/>
+          </div>
         ))}
 
       </ul>
